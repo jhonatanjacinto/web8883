@@ -1,0 +1,32 @@
+.form-newsletter {
+    display: flex;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #e93d50;
+    border: 2px solid #e93d50;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-newsletter label {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: -10000px;
+}
+
+.form-newsletter__campo {
+    padding: .6rem .4rem;
+    border: none;
+    flex-grow: 1;
+}
+
+.form-newsletter__botao {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e93d50;
+    flex-grow: 1;
+}

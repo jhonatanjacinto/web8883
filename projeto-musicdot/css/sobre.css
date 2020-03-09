@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3D3D3D;
+    width: 80%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo {
+    background-color: #E1EdF2;
+    padding: 10px;
+}
+
+.subtitulo {
+    border-bottom: 1px solid black;
+}
+
+figure {
+    margin: 30px;
+    padding: 15px;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    max-width: 100%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.foto-550px {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto-direita {
+    width: 275px;
+    float: right;
+}
+
+.contato__subtitulo {
+    display: inline;
+}
+
+.contato__info {
+    margin: 16px 0 24px;
+    padding-left: 32px;
+}
+
+.contato__info-titulo {
+    display: inline;
+}
+
+.contato__info-descricao {
+    display: inline;
+    margin-left: 10px;
+}
+
+.contato__secao {
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: top;
+}
+
+.contato__secao--telefone {
+    margin-left: 32px;
+}
+
+.rodape {
+    padding: 1.75em 0;
+    font-size: 1.1rem;
+}
+
+.rodape__logo {
+    width: 6em;
+}
+
+.rodape__copyright {
+    display: inline;
+    margin-left: 1em;
+}
+
+@media (max-width: 622px) {
+    .foto-direita {
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 446px) {
+    .contato__subtitulo {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .contato__info {
+        padding-left: 5px;
+        font-size: .92em;
+        border-left: 2px solid lightgrey;
+    }
+
+    .rodape {
+        font-size: .92em;
+    }
+}
+
+@media (max-width: 342px) {
+    .contato__info-descricao {
+        display: block;
+        margin-left: 1em;
+    }
+}

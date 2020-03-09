@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+
+        .transicao {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 0;
+            transition: 2s linear;
+            transition-property: background-color, border-radius;
+        }
+
+        .transicao:hover {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: red;
+        }
+
+        .acordeao {
+            width: 300px;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+        }
+        .acordeao h3 {
+            margin: 0;
+            padding: 15px;
+            background-color: #bbb;
+            border-bottom: 3px solid #333;
+        }
+        .acordeao .conteudo {
+            overflow: hidden;
+            height: 0px;
+            transition: 1s linear 5s;
+        }
+
+        .acordeao .conteudo div {
+            padding: 15px;
+        }
+
+        .acordeao:hover .conteudo {
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="transicao"></div>
+
+    <hr>
+
+    <div class="acordeao">
+        <h3>Abrir Acordeao</h3>
+        <div class="conteudo">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, reiciendis saepe ad tempore veritatis, consectetur autem pariatur voluptatum id neque dolore magni dicta rerum, corporis quisquam nulla consequatur velit iste.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

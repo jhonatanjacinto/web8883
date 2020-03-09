@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Elementos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+
+        div {
+            width: 400px;
+            padding: 20px;
+            margin: 30px auto;
+            border: 3px solid black;
+        }
+
+        .grupo1 p::selection {
+            background: yellow;
+            color: red;
+        }
+
+        p:first-child::first-line {
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        p:first-child::first-letter {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 50px;
+        }
+
+        div::before,
+        p::before,
+        p::after {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            background-color: red;
+            margin-right: 20px;
+            vertical-align: bottom;
+        }
+
+        p::after {
+            background-color: yellowgreen;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        p:first-child::before { 
+            display: none;
+        }
+
+        div::before {
+            float: left;
+            display: block;
+            margin-top: 20px;
+        }
+
+        p:first-child {
+            margin-top: 0;
+        }
+
+        .icone-acessibilidade::before {
+            content: "\f368";
+            color: teal;
+            font-size: 50px;
+            font-family: 'Font Awesome 5 Brands';
+            font-weight: 900;
+        }
+
+        .icone-acessibilidade {
+            text-decoration: none;
+        }
+        .icone-acessibilidade span {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grupo1">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe expedita soluta aliquid. Ea consequatur distinctio beatae delectus accusamus voluptatum ut quam? Aliquid saepe ipsa officia nulla doloribus eos veritatis aliquam!</p>
+        <p>Odio tenetur architecto, veniam deserunt molestias adipisci enim voluptatibus corporis quo temporibus iusto illo distinctio! Voluptatem, nesciunt in dicta eius exercitationem, magnam beatae quidem, mollitia maxime iste ex ipsum voluptates?</p>
+        <p>Odit dignissimos optio beatae nisi, repellendus illo! Quam inventore atque id vero laborum veniam quisquam fugit vitae dolorum necessitatibus, quae porro impedit laboriosam ullam nam exercitationem officiis, unde soluta at?</p>
+    </div>
+
+    <hr>
+
+    <div class="grupo2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque rem laborum praesentium totam, nostrum quis assumenda nihil nulla corrupti tempore, quo sunt exercitationem eos aliquid fugit sint! Voluptatibus, ullam numquam.</p>
+        <p>Fuga illum mollitia blanditiis voluptatum sint nemo delectus dolores commodi harum accusantium error sunt saepe voluptates magni quod accusamus nihil facere, laboriosam consequuntur velit perferendis doloremque distinctio libero consectetur. Maiores?</p>
+        <p>Quos velit earum similique mollitia deserunt veniam aperiam explicabo harum sunt. Sunt, placeat rerum ea repellendus accusamus dignissimos at provident a incidunt vel tempore quasi est atque, deleniti esse? Esse.</p>
+        <p>Reiciendis illo, eos dolorem in minima exercitationem recusandae voluptatem vitae, ut et numquam officiis deserunt cupiditate! Perspiciatis dolorem quod necessitatibus quaerat aspernatur error voluptatem laborum nostrum. A placeat nihil quam?</p>
+        <p>Nemo aut molestias sed molestiae nisi omnis. Sunt, error vitae nisi libero amet totam minima commodi laborum cupiditate nostrum. Modi totam eligendi maxime voluptatum corrupti odio amet dolorem, ab eius.</p>
+    </div>
+
+    <hr>
+
+    <a href="" class="icone-acessibilidade">
+        <span>Informações de Acessibilidade</span>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrões de Escrita CSS</title>
+    <style>
+
+        .produto {
+            background: lightgray;
+        }
+        .produto--destaque {
+            background: orange
+        }
+        .produto__titulo {
+            font-size: 30px;
+        }
+        .produto__btn {
+            background: palegreen;
+        }
+        .produto__btn--laranja {
+            background: peru;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="produto produto--destaque">
+        <h3 class="produto__titulo">Meu Produto</h3>
+        <span class="produto__preco">Preço: R$ 17,50</span>
+        <a href="" class="produto__btn produto__btn--laranja">Comprar</a>
+    </div>
+
+    <div class="produto">
+        <h3 class="produto__titulo">Meu Produto 2</h3>
+        <span class="produto__preco">Preço: R$ 17,50</span>
+        <a href="" class="produto__btn">Comprar</a>
+    </div>
+
+    <div class="produto">
+        <h3 class="produto__titulo">Meu Produto 3</h3>
+        <span class="produto__preco">Preço: R$ 17,50</span>
+        <a href="" class="produto__btn">Comprar</a>
+    </div>
+
+</body>
+</html>

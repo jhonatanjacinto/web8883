@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Seletores</title>
+    <style>
+
+        /* + (seletor de elemento irmão direto) */
+        div + p {
+            background: tomato;
+        }
+
+        /* > (seletor de elemento filho direto) */
+        body > span {
+            background: violet;
+        }
+
+        /* ~ (elementos irmãos posteriores) */
+        p ~ ul {
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <div>Uma div qualquer</div>
+    <p>Um paragrafo depois da DIV</p>
+
+    <div>Outra div qualquer</div>
+    <span>Um elemento span</span>
+    <p>Outro paragrafo depois do span <span>Um span dentro do paragrafo</span></p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>Título</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+</body>
+</html>

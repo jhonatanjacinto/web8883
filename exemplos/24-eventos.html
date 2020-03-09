@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Eventos</title>
+
+    <script>
+
+        // Código JavaScript
+        window.onload = function()
+        {
+            var formulario = document.querySelector('form');
+            formulario.onsubmit = function(event) 
+            {
+                var campoEmail = document.querySelector('#campoEmail');
+                var regex = /[a-zA-Z0-9\._]+\@[a-zA-Z0-9\._\-]+\.[a-zA-Z]{2,}\.?([a-zA-Z]{2,})?/;
+                var isEmailValido = regex.test(campoEmail.value);
+
+                if (!isEmailValido) {
+                    event.preventDefault();
+                    alert('Por favor, preencha o campo com um e-mail válido!');
+                    campoEmail.value = '';
+                    campoEmail.focus();
+                }
+            }
+
+            var campo = document.querySelector('#campoEmail');
+            var mostrador = document.querySelector('#mostrador');
+
+            campo.oninput = function() {
+                mostrador.textContent = "Você está digitando: " + campo.value;
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="texto" id="campoEmail" placeholder="Digite seu e-mail aqui:">
+        <button>Enviar</button>
+        <p id="mostrador"></p>
+    </form>
+
+</body>
+
+</html>

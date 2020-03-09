@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Ubuntu:300&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+/* Variáveis em CSS */
+:root {
+    --cor-texto-padrao: #626262;
+    --cor-texto-categoria: #b4ad9e;
+    --fundo-cinza: #f0f0f0;
+    --link-preto: #000000;
+    --fonte-ubuntu: 'Ubuntu', sans-serif;
+    --fonte-play: 'Playfair Display', serif;
+    --fonte-titulos: 30px;
+    --fonte-titulos-categoria: 14px;
+    --fonte-padrao: 16px;
+}
+
+body {
+    font-family: var(--fonte-play);
+    font-size: var(--fonte-padrao);
+    color: var(--cor-texto-padrao);
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-preto);
+    transition: .5s linear;
+}
+
+/* Conteiners */
+.container {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.container.pequeno {
+    max-width: 900px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.btn-load {
+    font-size: 20px;
+    padding: 15px 25px;
+    border: 1px solid black;
+    margin: 50px auto;
+    display: block;
+    font-family: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+.btn-load:hover {
+    opacity: .6;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+    <style>
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li:nth-child(even) {
+            background-color: yellow;
+        }
+
+        p:last-child {
+            background-color: aqua;
+        }
+
+        .container {
+            padding: 15px;
+            background: #f3f3f3;
+        }
+
+        p:nth-of-type(3) {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+        <li>Menu 4</li>
+        <li>Menu 5</li>
+    </ul>
+
+    <hr>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, id. Quos velit voluptate possimus similique temporibus neque officia sint doloremque nihil? Quos amet consectetur dolorem eligendi esse saepe eius vitae!</p>
+    <p>Adipisci in aspernatur, libero quae aliquam tempore ea dolore quidem, eaque nemo fugit odio esse nulla hic ipsam incidunt veniam accusantium, perferendis at quas repellendus necessitatibus itaque corporis? Aliquid, voluptas.</p>
+    <p>Aliquam, explicabo. Tempore reiciendis consectetur facilis odit dolorem adipisci veritatis esse quisquam quam, at voluptatum, porro minus, non molestias accusantium sapiente facere? Quis molestias reiciendis esse alias aliquid dolores in?</p>
+
+    <div class="container">
+        <span></span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quos suscipit ipsum animi, similique voluptate veritatis laudantium libero ex dolor excepturi dolorum, magni ipsam sit! Tenetur, mollitia! Exercitationem, repudiandae vero?</p>
+        <p>Neque omnis blanditiis corrupti doloremque placeat inventore at voluptates deleniti eum dignissimos alias, aliquid doloribus quo accusantium quasi! Mollitia odio veritatis molestias non temporibus ratione repudiandae dolore architecto ab eius.</p>
+        <p>Autem, sapiente velit illo consequatur, praesentium amet ullam ipsam, quasi quaerat aut aliquid? Ullam ea, officiis maiores excepturi expedita consequatur cupiditate fugit nemo animi sapiente corrupti, minima quo dolor obcaecati!</p>
+        <p>Quae, deleniti excepturi id inventore maxime iste pariatur quisquam. Tenetur fuga nisi fugit delectus! Et, illum nihil illo quod, eius sit dolorem rerum itaque dolor repudiandae ad quis, voluptas ea.</p>
+        <div style="padding: 40px; background: red;">
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora blanditiis modi rem sunt aperiam! Fugiat voluptate, mollitia, delectus asperiores atque nulla maiores, cum ab rerum assumenda magnam ipsum dolores laborum.</p>
+                <p>Eius ex libero dignissimos omnis voluptates eaque amet provident impedit expedita! Expedita quidem ex quibusdam quasi vel blanditiis veritatis nisi impedit itaque illo, nulla commodi amet temporibus nesciunt velit provident!</p>
+                <p>Odio doloremque sint accusantium, maiores hic aliquid ipsam rerum tenetur quia aspernatur corrupti reprehenderit omnis? Consectetur saepe nesciunt nihil omnis, ab voluptatum corrupti debitis, quaerat quod sit dicta officiis soluta?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

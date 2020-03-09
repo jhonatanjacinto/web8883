@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriculas | MusicDot</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/musicdot-logo-light.svg" alt="" class="header-navbar-logo">
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#conteudo"
+                    aria-controls="conteudo" aria-expanded="false" aria-label="Navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudo">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Matriculas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">E-mails</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container mb-4">
+        <div class="jumbotron bg-dark text-light mt-3">
+            <div class="container">
+                <h1>Escolher cursos</h1>
+                <p class="lead">Escolha os cursos que gostaria de se matricular</p>
+            </div>
+        </div>
+
+        <table class="table table-hover rounded-top">
+            <thead class="thead-dark">
+                <tr>
+                    <th></th>
+                    <th>Curso</th>
+                    <th>Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="curso" value="20"></td>
+                    <td>Curso de Violão</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="curso" value="30"></td>
+                    <td>Curso de Bambolê</td>
+                    <td>30h</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="curso" value="12"></td>
+                    <td>Curso de Java</td>
+                    <td>12h</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="curso" value="20"></td>
+                    <td>Curso de Guitarra</td>
+                    <td>20h</td>
+                </tr>
+                <tr class="bg-dark text-light">
+                    <td>Total</td>
+                    <td class="js-total-de-cursos">0 curso(s)</td>
+                    <td class="js-total-de-horas">0h</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-outline-dark btn-lg mb-4">
+            Confirmar Matricula
+        </button>
+    </main>
+
+
+    <script src="js/matricula.js"></script>
+</body>
+</html>

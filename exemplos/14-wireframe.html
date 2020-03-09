@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900|Roboto&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            max-width: 760px;
+            width: 90%;
+            margin: 18px auto;
+        }
+
+        /* BEMCSS */
+        .cabecalho {
+            margin-bottom: 30px;
+        }
+
+        .cabecalho__titulo {
+            width: 130px;
+            margin: 0;
+        }
+
+        .cabecalho__logo {
+            width: 100%;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu__item {
+            display: inline;
+        }
+
+        .menu--menu-vertical .menu__item {
+            display: block;
+        }
+
+        .menu__item-link {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+        }
+
+        .container-flex {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .container-flex--vcenter {
+            align-items: center;
+        }
+
+        /* CSS Padrão */
+        .cabecalho li {
+            margin-left: 10px;
+        }
+
+        .cabecalho li a:hover {
+            text-decoration: underline;
+        }
+
+        .cabecalho li:last-child a {
+            padding: 13px;
+            background-color: #5BF1BB;
+            color: #56826A;
+            border-radius: 15px;
+        }
+
+        div.container-flex nav {
+            background: linear-gradient(180deg, #0B9FA9 0%, #7DD9ED 100%);
+            width: 200px;
+            padding: 25px;
+            border-radius: 15px 0;
+        }
+
+        div.container-flex section {
+            width: 525px;
+            border-top: 2px solid black;
+            padding-bottom: 20px;
+        }
+
+        div.container-flex nav h3 {
+            margin: 0 0 15px 0;
+        }
+
+        div.container-flex nav li {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        div.container-flex nav a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        div.container-flex {
+            align-items: stretch;
+        }
+
+         figure {
+             max-width: 100%;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+             font-size: 12px;
+             font-style: italic;
+         }
+
+         figure img {
+             width: 100%;
+         }
+
+         section h2 {
+             text-align: center;
+             font-family: 'Montserrat', sans-serif;
+             font-weight: 900;
+         }
+
+         section a {
+             font-size: 12px;
+             text-decoration: underline;
+             color: black;
+         }
+
+         .rodape {
+             background: black;
+             color: #fff;
+             padding: 40px 20px;
+             margin-top: 5px;
+         }
+         .rodape a {
+             color: #fff;
+             font-size: 25px;
+         }
+         .rodape li {
+             margin-left: 15px;
+         }
+         .rodape a:hover {
+             opacity: .6;
+         }
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho container-flex container-flex--vcenter">
+        <h1 class="cabecalho__titulo">
+            <img class="cabecalho__logo" src="mini.png" alt="Logo da Mini" title="Mini">
+        </h1>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Área Restrita</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Cadastre-se</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- @FIM Cabeçalho -->
+
+    <div class="container-flex">
+        <!-- MENU -->
+        <nav>
+            <h3>Menu</h3>
+            <ul class="menu menu--menu-vertical">
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Sobre a Empresa</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Produtos</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Serviços</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">FAQ</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- @FIM Menu-->
+
+        <!-- CONTEUDO PRINCIPAL -->
+        <section>
+            <h2>Bem-vindo(a)!</h2>
+            <figure>
+                <img src="office.jpg" alt="Foto do Escritório da Mini" title="Foto do Escritório">
+                <figcaption>
+                    Foto do nosso escritório em Barueri, SP.
+                </figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque aliquam, autem, voluptates atque placeat voluptatum veritatis expedita deserunt quas repudiandae blanditiis nisi aperiam molestiae quis debitis, consequatur quos quaerat reprehenderit.</p>
+            <p>Aliquid ipsa voluptas adipisci voluptatum quod harum commodi voluptates quisquam natus quaerat deserunt laudantium maiores aspernatur sunt debitis eligendi officia, doloribus cupiditate, sit, quam nemo dolorum aut! Nulla, iusto architecto!</p>
+
+            <a href="">+ Saiba Mais</a>
+        </section>
+        <!-- @FIM Conteúdo Principal -->
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape container-flex container-flex--vcenter">
+        <p>
+            Copyright &copy; Mini - Todos os direitos reservados.
+        </p>
+        <nav>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">
+                        <i class="fab fa-facebook-f" title="Facebook"></i>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">
+                        <i class="fab fa-linkedin-in" title="LinkedIn"></i>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__item-link">
+                        <i class="fab fa-instagram" title="Instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- @FIM Rodapé -->
+
+
+    
+</body>
+</html>

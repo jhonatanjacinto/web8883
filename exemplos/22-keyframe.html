@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .animacao {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: red;
+            animation-name: mudaCorBox;
+            animation-duration: 2s;
+            animation-direction:normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mudaCorBox {
+            0% {
+                transform: rotate(0);
+                background-color: red;
+            }
+            50% {
+                background-color: blueviolet;
+            }
+            100% {
+                transform: rotate(360deg);
+                background-color: yellowgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animacao">
+
+    </div>
+    
+</body>
+</html>

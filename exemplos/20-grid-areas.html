@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Areas</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid {
+            width: 600px;
+            height: 400px;
+            margin: 25px auto;
+            border: 3px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:  
+                "fotovertical1 fotohorizontal1 fotohorizontal1"
+                "fotovertical1 fotopequena1 fotopequena2"
+                "fotopequena3 fotohorizontal2 fotohorizontal2"
+            ;
+            gap: 5px;
+        }
+
+        .foto {
+            background-color: yellow;
+        }
+
+        .foto:first-child {
+            grid-area: fotovertical1;
+        }
+
+        .foto:nth-child(2) {
+            grid-area: fotopequena3;
+        }
+
+        .foto:nth-child(3) {
+            grid-area: fotohorizontal2;
+        }
+
+        .foto:nth-child(5) {
+            grid-area: fotohorizontal1;
+        }
+
+        .foto:nth-child(6) {
+            grid-area: fotopequena1;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="foto">Foto 1</div>
+        <div class="foto">Foto 2</div>
+        <div class="foto">Foto 3</div>
+        <div class="foto">Foto 4</div>
+        <div class="foto">Foto 5</div>
+        <div class="foto">Foto 6</div>
+    </div>
+
+</body>
+</html>
